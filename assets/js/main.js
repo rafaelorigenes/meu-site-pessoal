@@ -26,7 +26,7 @@
   /* ---------- Menu mobile ---------- */
   const toggle = $('.nav-toggle');
   const nav = $('#menu');
-  const mobileMq = window.matchMedia('(max-width: 900px)');
+  const mobileMq = window.matchMedia('(max-width: 1080px)');
 
   const setMenu = (open) => {
     nav.classList.toggle('is-open', open);
@@ -59,7 +59,7 @@
     const spy = new IntersectionObserver((entries) => {
       entries.forEach((en) => { if (en.isIntersecting) setActive(en.target.id); });
     }, { rootMargin: '-45% 0px -50% 0px' });
-    $$('main > section[id]').forEach((s) => spy.observe(s));
+    $$('main section[id]').forEach((s) => spy.observe(s));
   }
 
   /* ---------- Revelar elementos ao rolar ---------- */
@@ -75,75 +75,12 @@
     reveals.forEach((el) => el.classList.add('is-visible'));
   }
 
-  /* ---------- Abas de serviços ---------- */
-  const tabsRoot = $('[data-tabs]');
-  const tablist = $('[data-tablist]', tabsRoot);
-  const tabs = $$('[data-tab]', tabsRoot);
-  const panels = tabs.map((t) => document.getElementById(t.dataset.tab));
-  const tabIds = tabs.map((t) => t.dataset.tab);
-
-  tablist.setAttribute('role', 'tablist');
-  const setOrientation = () => tablist.setAttribute('aria-orientation', window.matchMedia('(max-width: 960px)').matches ? 'horizontal' : 'vertical');
-  setOrientation();
-  window.matchMedia('(max-width: 960px)').addEventListener('change', setOrientation);
-
-  tabs.forEach((tab, i) => {
-    tab.setAttribute('role', 'tab');
-    tab.id = `tab-${tab.dataset.tab}`;
-    tab.setAttribute('aria-controls', panels[i].id);
-    panels[i].setAttribute('role', 'tabpanel');
-    panels[i].setAttribute('aria-labelledby', tab.id);
-    panels[i].tabIndex = 0;
-  });
-
-  const scrollTabIntoStrip = (tab) => {
-    if (tablist.scrollWidth <= tablist.clientWidth) return;
-    const delta = tab.getBoundingClientRect().left - tablist.getBoundingClientRect().left;
-    tablist.scrollBy({ left: delta - 16, behavior: 'smooth' });
-  };
-
-  const selectTab = (id, { focus = false } = {}) => {
-    const index = Math.max(0, tabIds.indexOf(id));
-    tabs.forEach((t, i) => {
-      const on = i === index;
-      t.setAttribute('aria-selected', String(on));
-      t.tabIndex = on ? 0 : -1;
-      panels[i].hidden = !on;
-    });
-    if (focus) tabs[index].focus({ preventScroll: true });
-    scrollTabIntoStrip(tabs[index]);
-  };
-
-  tabs.forEach((tab, i) => {
-    tab.addEventListener('click', (e) => { e.preventDefault(); selectTab(tab.dataset.tab); });
-    tab.addEventListener('keydown', (e) => {
-      const keys = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 };
-      let next = null;
-      if (e.key in keys) next = (i + keys[e.key] + tabs.length) % tabs.length;
-      else if (e.key === 'Home') next = 0;
-      else if (e.key === 'End') next = tabs.length - 1;
-      if (next === null) return;
-      e.preventDefault();
-      selectTab(tabIds[next], { focus: true });
-    });
-  });
-
-  // Atalhos que abrem uma aba específica (ex.: cartões do início)
-  const openTabFromLink = (id) => {
-    selectTab(id);
-    $('#servicos').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-    tabs[tabIds.indexOf(id)].focus({ preventScroll: true });
-  };
-  $$('[data-tab-link]').forEach((a) => a.addEventListener('click', (e) => {
-    e.preventDefault();
-    openTabFromLink(a.dataset.tabLink);
-  }));
-
-  const initialHash = decodeURIComponent(location.hash.slice(1));
-  selectTab(tabIds.includes(initialHash) ? initialHash : tabIds[0]);
-  tabsRoot.classList.add('is-ready');
-  if (tabIds.includes(initialHash)) {
-    requestAnimationFrame(() => $('#servicos').scrollIntoView());
+  /* ---------- Links antigos das abas (#svc-...) levam às novas seções ---------- */
+  const legacy = { "svc-sites": "planos", "svc-anuncios": "anuncios", "svc-fotos": "fotos", "svc-videos": "videos", "svc-personalizados": "personalizados" };
+  const legacyTarget = legacy[decodeURIComponent(location.hash.slice(1))];
+  if (legacyTarget) {
+    history.replaceState(null, "", "#" + legacyTarget);
+    requestAnimationFrame(() => document.getElementById(legacyTarget).scrollIntoView());
   }
 
   /* ---------- Formulário de orçamento ---------- */
@@ -359,6 +296,42 @@
   form.addEventListener('submit', (e) => { e.preventDefault(); handle('whatsapp'); });
   btnEmail.addEventListener('click', () => handle('email'));
 
+  /* ---------- Projetos personalizados: ideia direto no WhatsApp ---------- */
+  const ideaForm = $('#idea-form');
+  if (ideaForm) {
+    const idea = $('#f-ideia');
+    const ideaBtn = $('button[type="submit"]', ideaForm);
+    const ideaStatus = $('.form__status', ideaForm);
+    const ideaCount = $('[data-idea-count]', ideaForm);
+    const ideaError = $('#e-ideia');
+    const checkIdea = () => {
+      const msg = idea.value.trim().length >= 10 ? '' : 'Descreva sua ideia em poucas palavras (mínimo de 10 caracteres).';
+      if (msg) idea.setAttribute('aria-invalid', 'true'); else idea.removeAttribute('aria-invalid');
+      ideaError.textContent = msg;
+      return !msg;
+    };
+    ideaBtn.disabled = false;
+    idea.addEventListener('input', () => {
+      ideaCount.textContent = String(idea.value.length);
+      if (idea.hasAttribute('aria-invalid')) checkIdea();
+    });
+    ideaForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!checkIdea()) { idea.focus(); return; }
+      const text = 'Olá, Rafael! Vim pelo seu site e gostaria de solicitar um orçamento de um projeto personalizado.\n\n*Minha ideia:*\n'
+        + idea.value.trim().replace(/\n{3,}/g, '\n\n');
+      const url = waUrl(text);
+      const win = window.open(url, '_blank');
+      if (win) win.opener = null;
+      else window.location.href = url;
+      const link = document.createElement('a');
+      link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = 'Abrir o WhatsApp';
+      ideaStatus.hidden = false;
+      ideaStatus.className = 'form__status form__status--ok';
+      ideaStatus.replaceChildren('O WhatsApp foi aberto com sua ideia escrita. Para concluir, confira e toque em enviar por lá. Não abriu? ', link, '.');
+    });
+  }
+
   /* ---------- Copiar e-mail ---------- */
   $$('[data-copy]').forEach((btn) => {
     if (!navigator.clipboard || !window.isSecureContext) return;
@@ -396,7 +369,7 @@
         entries.forEach((en) => { if (en.isIntersecting) blockers.add(en.target); else blockers.delete(en.target); });
         update();
       });
-      [$('.quote__card'), $('#contato'), $('.footer')].forEach((el) => el && io.observe(el));
+      [$('.quote__card'), $('.custom__form'), $('#contato'), $('.footer')].forEach((el) => el && io.observe(el));
     }
     window.addEventListener('scroll', update, { passive: true });
     update();

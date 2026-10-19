@@ -75,10 +75,11 @@
 
       <nav class="nav" id="menu" aria-label="Navegação principal">
         <ul class="nav__list">
-          <li><a class="nav__link" href="#inicio">Início</a></li>
-          <li><a class="nav__link" href="#servicos">Serviços</a></li>
-          <li><a class="nav__link" href="#planos">Planos</a></li>
-          <li><a class="nav__link" href="#orcamento">Orçamento</a></li>
+          <li><a class="nav__link" href="#planos">Sites</a></li>
+          <li><a class="nav__link" href="#anuncios">Anúncios</a></li>
+          <li><a class="nav__link" href="#fotos">Fotos</a></li>
+          <li><a class="nav__link" href="#videos">Vídeos</a></li>
+          <li><a class="nav__link" href="#personalizados">Personalizados</a></li>
           <li><a class="nav__link" href="#contato">Contato</a></li>
         </ul>
         <a class="btn btn--primary btn--sm nav__cta" href="#orcamento" data-service="">Solicitar orçamento</a>
@@ -138,177 +139,16 @@
       <div class="container">
         <ul class="hero__services" aria-label="Atalhos para os serviços">
           <li><a href="#planos"><svg class="icon" aria-hidden="true"><use href="#i-site"/></svg><span>Criação de sites</span><small>a partir de R$&nbsp;350</small></a></li>
-          <li><a href="#svc-anuncios" data-tab-link="svc-anuncios"><svg class="icon" aria-hidden="true"><use href="#i-ad"/></svg><span>Anúncios</span><small>a partir de R$&nbsp;35</small></a></li>
-          <li><a href="#svc-fotos" data-tab-link="svc-fotos"><svg class="icon" aria-hidden="true"><use href="#i-photo"/></svg><span>Edição de fotos</span><small>a partir de R$&nbsp;14,89</small></a></li>
-          <li><a href="#svc-videos" data-tab-link="svc-videos"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg><span>Edição de vídeos</span><small>a partir de R$&nbsp;60</small></a></li>
+          <li><a href="#anuncios"><svg class="icon" aria-hidden="true"><use href="#i-ad"/></svg><span>Anúncios</span><small>a partir de R$&nbsp;35</small></a></li>
+          <li><a href="#fotos"><svg class="icon" aria-hidden="true"><use href="#i-photo"/></svg><span>Edição de fotos</span><small>a partir de R$&nbsp;14,89</small></a></li>
+          <li><a href="#videos"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg><span>Edição de vídeos</span><small>a partir de R$&nbsp;60</small></a></li>
+          <li><a href="#personalizados"><svg class="icon" aria-hidden="true"><use href="#i-idea"/></svg><span>Personalizados</span><small>orçamento sob medida</small></a></li>
         </ul>
       </div>
     </section>
 
     <!-- ============ SERVIÇOS ============ -->
-    <section class="section" id="servicos" aria-labelledby="servicos-title">
-      <div class="container">
-        <header class="section__head" data-reveal>
-          <p class="eyebrow">Serviços</p>
-          <h2 class="section__title" id="servicos-title">O que eu posso fazer pelo seu negócio</h2>
-          <p class="section__lead">Escolha uma categoria para ver o que está incluído e os valores. Se não encontrar exatamente o que procura, conte sua ideia.</p>
-        </header>
-
-        <div class="services" data-tabs data-reveal>
-          <div class="services__nav" data-tablist aria-label="Categorias de serviços">
-            <a class="services__tab" href="#svc-sites" data-tab="svc-sites">
-              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-site"/></svg></span>
-              <span class="services__tab-text"><strong>Criação de sites</strong><small>a partir de R$&nbsp;350</small></span>
-            </a>
-            <a class="services__tab" href="#svc-anuncios" data-tab="svc-anuncios">
-              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-ad"/></svg></span>
-              <span class="services__tab-text"><strong>Criação de anúncios</strong><small>a partir de R$&nbsp;35</small></span>
-            </a>
-            <a class="services__tab" href="#svc-fotos" data-tab="svc-fotos">
-              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-photo"/></svg></span>
-              <span class="services__tab-text"><strong>Edição de fotos</strong><small>a partir de R$&nbsp;14,89</small></span>
-            </a>
-            <a class="services__tab" href="#svc-videos" data-tab="svc-videos">
-              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></span>
-              <span class="services__tab-text"><strong>Edição de vídeos</strong><small>a partir de R$&nbsp;60</small></span>
-            </a>
-            <a class="services__tab" href="#svc-personalizados" data-tab="svc-personalizados">
-              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-idea"/></svg></span>
-              <span class="services__tab-text"><strong>Projetos personalizados</strong><small>orçamento sob medida</small></span>
-            </a>
-          </div>
-
-          <div class="services__panels">
-            <!-- Sites -->
-            <article class="panel" id="svc-sites" aria-labelledby="svc-sites-title">
-              <div class="panel__head">
-                <h3 class="panel__title" id="svc-sites-title">Criação de sites</h3>
-                <p class="panel__desc">Sites institucionais, catálogos de produtos e sistemas sob medida, sempre adaptados para celular e computador. São três planos, do essencial ao personalizado.</p>
-              </div>
-              <ul class="price-list">
-                <li class="price-row">
-                  <div class="price-row__info"><strong>Plano Básico</strong><span>Presença digital com até 8 páginas ou seções</span></div>
-                  <p class="price-row__value">R$&nbsp;350 <span>a</span> R$&nbsp;500</p>
-                </li>
-                <li class="price-row">
-                  <div class="price-row__info"><strong>Plano Profissional</strong><span>Catálogo, galeria, formulário e mapa</span></div>
-                  <p class="price-row__value">R$&nbsp;600 <span>a</span> R$&nbsp;850</p>
-                </li>
-                <li class="price-row">
-                  <div class="price-row__info"><strong>Plano Premium</strong><span>Funcionalidades personalizadas, login e painel</span></div>
-                  <p class="price-row__value">R$&nbsp;1.200 <span>a</span> R$&nbsp;1.800<span> ou mais</span></p>
-                </li>
-              </ul>
-              <p class="panel__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>Valores de criação. A manutenção mensal é cobrada à parte e aparece em cada plano.</p>
-              <div class="panel__actions">
-                <a class="btn btn--primary" href="#planos">Ver e comparar os planos <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              </div>
-            </article>
-
-            <!-- Anúncios -->
-            <article class="panel" id="svc-anuncios" aria-labelledby="svc-anuncios-title">
-              <div class="panel__head">
-                <h3 class="panel__title" id="svc-anuncios-title">Criação de anúncios</h3>
-                <p class="panel__desc">Criação de artes publicitárias para divulgar seus produtos e serviços nas redes sociais, com visual alinhado à sua marca e mensagem clara.</p>
-              </div>
-              <ul class="price-list">
-                <li class="price-row">
-                  <div class="price-row__info"><strong>Anúncio individual</strong><span>Uma arte publicitária</span></div>
-                  <p class="price-row__value">R$&nbsp;35 <span>a</span> R$&nbsp;60</p>
-                </li>
-                <li class="price-row price-row--accent">
-                  <div class="price-row__info"><strong>Pacote com 5 anúncios</strong><span>Cinco artes — equivale a R$&nbsp;20 por arte</span></div>
-                  <p class="price-row__value">R$&nbsp;100,00</p>
-                </li>
-              </ul>
-              <p class="panel__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O serviço é a criação das artes. A verba dos anúncios e o gerenciamento de campanhas não estão incluídos.</p>
-              <div class="panel__actions">
-                <a class="btn btn--primary" href="#orcamento" data-service="anuncio-individual">Solicitar orçamento</a>
-                <a class="btn btn--ghost" href="#orcamento" data-service="anuncio-pacote">Quero o pacote</a>
-              </div>
-            </article>
-
-            <!-- Fotos -->
-            <article class="panel" id="svc-fotos" aria-labelledby="svc-fotos-title">
-              <div class="panel__head">
-                <h3 class="panel__title" id="svc-fotos-title">Edição de fotos</h3>
-                <p class="panel__desc">Tratamento de imagens para produtos, redes sociais e materiais de divulgação. O valor acompanha o nível de trabalho que cada foto exige.</p>
-              </div>
-
-              <div class="scale" role="img" aria-label="Escala de preço por complexidade: edição básica R$&nbsp;14,89; edição complexa de R$&nbsp;29,90 a R$&nbsp;69,99, com uma foto bônus na edição de R$&nbsp;69,99.">
-                <div class="scale__track"><span class="scale__fill"></span></div>
-                <div class="scale__marks">
-                  <span class="scale__mark"><b>R$&nbsp;14,89</b>básica</span>
-                  <span class="scale__mark"><b>R$&nbsp;29,90</b>complexa</span>
-                  <span class="scale__mark scale__mark--end"><b>R$&nbsp;69,99</b>+1 foto bônus</span>
-                </div>
-              </div>
-
-              <ul class="price-list">
-                <li class="price-row">
-                  <div class="price-row__info"><strong>Edição básica</strong><span>Ajustes de luz, cor e enquadramento</span></div>
-                  <p class="price-row__value">R$&nbsp;14,89<span>/foto</span></p>
-                </li>
-                <li class="price-row">
-                  <div class="price-row__info"><strong>Edição complexa</strong><span>Retoques detalhados, recortes e montagens</span></div>
-                  <p class="price-row__value">R$&nbsp;29,90 <span>a</span> R$&nbsp;69,99<span>/foto</span></p>
-                </li>
-              </ul>
-              <p class="bonus"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg><span>Na edição de <strong>R$&nbsp;69,99</strong>, você recebe uma foto adicional editada como bônus.</span></p>
-              <p class="panel__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O orçamento final depende do trabalho solicitado. Envie as fotos e o que deseja para receber o valor exato.</p>
-              <div class="panel__actions">
-                <a class="btn btn--primary" href="#orcamento" data-service="foto-basica">Solicitar orçamento</a>
-              </div>
-            </article>
-
-            <!-- Vídeos -->
-            <article class="panel" id="svc-videos" aria-labelledby="svc-videos-title">
-              <div class="panel__head">
-                <h3 class="panel__title" id="svc-videos-title">Edição de vídeos</h3>
-                <p class="panel__desc">Vídeos curtos para redes sociais, divulgação e apresentações, editados conforme o ritmo e o objetivo de cada conteúdo.</p>
-              </div>
-              <ul class="tiers">
-                <li class="tier">
-                  <p class="tier__tag">até 30 s</p>
-                  <h4 class="tier__name">Vídeo básico</h4>
-                  <p class="tier__price">R$&nbsp;60 <span>a</span> R$&nbsp;90</p>
-                  <p class="tier__desc">Cortes e ajustes simples.</p>
-                  <a class="tier__link" href="#orcamento" data-service="video-basico">Solicitar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                </li>
-                <li class="tier">
-                  <p class="tier__tag">até 60 s</p>
-                  <h4 class="tier__name">Vídeo dinâmico</h4>
-                  <p class="tier__price">R$&nbsp;90 <span>a</span> R$&nbsp;160</p>
-                  <p class="tier__desc">Legendas, música, cortes e transições.</p>
-                  <a class="tier__link" href="#orcamento" data-service="video-dinamico">Solicitar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                </li>
-                <li class="tier">
-                  <p class="tier__tag">sob análise</p>
-                  <h4 class="tier__name">Vídeo avançado</h4>
-                  <p class="tier__price"><span>a partir de</span> R$&nbsp;160</p>
-                  <p class="tier__desc">Para efeitos ou edições mais complexas.</p>
-                  <a class="tier__link" href="#orcamento" data-service="video-avancado">Solicitar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-                </li>
-              </ul>
-              <p class="panel__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O valor dentro de cada faixa depende do material enviado e do resultado esperado.</p>
-            </article>
-
-            <!-- Personalizados -->
-            <article class="panel panel--custom" id="svc-personalizados" aria-labelledby="svc-personalizados-title">
-              <div class="panel__head">
-                <span class="panel__badge"><svg class="icon" aria-hidden="true"><use href="#i-idea"/></svg></span>
-                <h3 class="panel__title" id="svc-personalizados-title">Projetos personalizados</h3>
-                <p class="panel__desc panel__desc--lg">Tem uma ideia diferente? Conte o que você precisa. Vou avaliar a possibilidade de desenvolver sua solução e apresentar um orçamento personalizado.</p>
-              </div>
-              <div class="panel__actions">
-                <a class="btn btn--primary" href="#orcamento" data-service="personalizado">Solicitar orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <div id="servicos">
     <!-- ============ PLANOS ============ -->
     <section class="section section--alt" id="planos" aria-labelledby="planos-title">
       <div class="container">
@@ -413,6 +253,228 @@
         <p class="plans__help" data-reveal>Não sabe qual plano escolher? <a href="#orcamento" data-service="site-indefinido">Descreva seu negócio e eu indico o mais adequado</a>.</p>
       </div>
     </section>
+
+    <!-- ============ CRIAÇÃO DE ANÚNCIOS ============ -->
+    <section class="section svc" id="anuncios" aria-labelledby="anuncios-title">
+      <div class="container svc__layout">
+        <header class="svc__head" data-reveal>
+          <span class="svc__icon"><svg class="icon" aria-hidden="true"><use href="#i-ad"/></svg></span>
+          <p class="eyebrow">Criação de anúncios</p>
+          <h2 class="section__title" id="anuncios-title">Artes que apresentam bem o que você vende</h2>
+          <p class="section__lead">Criação de artes publicitárias para divulgar seus produtos, serviços e promoções nas redes sociais, com visual alinhado à sua marca e mensagem clara.</p>
+          <p class="svc__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>O serviço é a criação das artes. A verba de anúncios e o gerenciamento de campanhas não estão incluídos.</span></p>
+        </header>
+
+        <div class="offers offers--2">
+          <article class="offer" aria-labelledby="of-anuncio-individual" data-reveal>
+            <p class="offer__tag">1 arte</p>
+            <h3 class="offer__name" id="of-anuncio-individual">Anúncio individual</h3>
+            <p class="offer__desc">Uma arte publicitária para uma divulgação pontual: um produto, um serviço ou uma promoção.</p>
+            <dl class="offer__price">
+              <dt>Valor</dt>
+              <dd class="offer__value">R$&nbsp;35 <span>a</span> R$&nbsp;60</dd>
+            </dl>
+            <ul class="offer__list">
+              <li>1 arte publicitária</li>
+              <li>Visual alinhado à sua marca</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20cria%C3%A7%C3%A3o%20de%20an%C3%BAncio%20individual%20(R%24%2035%20a%20R%24%2060)." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento de anúncio individual pelo WhatsApp">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Solicitar orçamento
+            </a>
+          </article>
+
+          <article class="offer offer--featured" aria-labelledby="of-anuncio-pacote" data-reveal>
+            <p class="offer__tag">5 artes</p>
+            <h3 class="offer__name" id="of-anuncio-pacote">Pacote com 5 anúncios</h3>
+            <p class="offer__desc">Cinco artes para manter uma sequência de divulgação com a mesma identidade visual.</p>
+            <dl class="offer__price">
+              <dt>Valor do pacote</dt>
+              <dd class="offer__value">R$&nbsp;100,00</dd>
+              <dd class="offer__sub">equivale a R$&nbsp;20 por arte</dd>
+            </dl>
+            <ul class="offer__list">
+              <li>5 artes publicitárias</li>
+              <li>Identidade visual consistente entre as artes</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20do%20pacote%20com%205%20an%C3%BAncios%20(R%24%20100%2C00)." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento do pacote com 5 anúncios pelo WhatsApp">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Solicitar orçamento
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDIÇÃO DE FOTOS ============ -->
+    <section class="section section--alt svc" id="fotos" aria-labelledby="fotos-title">
+      <div class="container svc__layout">
+        <header class="svc__head" data-reveal>
+          <span class="svc__icon"><svg class="icon" aria-hidden="true"><use href="#i-photo"/></svg></span>
+          <p class="eyebrow">Edição de fotos</p>
+          <h2 class="section__title" id="fotos-title">Do ajuste simples ao retoque detalhado</h2>
+          <p class="section__lead">Tratamento de imagens para produtos, redes sociais e materiais de divulgação. O valor acompanha o nível de trabalho que cada foto exige.</p>
+
+          <div class="scale" role="img" aria-label="Escala de preço por complexidade: edição básica R$ 14,89; edição complexa de R$ 29,90 a R$ 69,99, com uma foto bônus na edição de R$ 69,99.">
+            <div class="scale__track"><span class="scale__fill"></span></div>
+            <div class="scale__marks">
+              <span class="scale__mark"><b>R$&nbsp;14,89</b>básica</span>
+              <span class="scale__mark"><b>R$&nbsp;29,90</b>complexa</span>
+              <span class="scale__mark scale__mark--end"><b>R$&nbsp;69,99</b>+1 foto bônus</span>
+            </div>
+          </div>
+
+          <p class="svc__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>O orçamento final depende do trabalho solicitado. Envie as fotos pelo WhatsApp para receber o valor exato.</span></p>
+        </header>
+
+        <div class="offers offers--2">
+          <article class="offer" aria-labelledby="of-foto-basica" data-reveal>
+            <p class="offer__tag">por foto</p>
+            <h3 class="offer__name" id="of-foto-basica">Edição básica</h3>
+            <p class="offer__desc">Para fotos que precisam de ajustes rápidos antes de serem publicadas.</p>
+            <dl class="offer__price">
+              <dt>Valor</dt>
+              <dd class="offer__value">R$&nbsp;14,89<span>/foto</span></dd>
+            </dl>
+            <ul class="offer__list">
+              <li>Ajustes de iluminação e cor</li>
+              <li>Correção de enquadramento</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20edi%C3%A7%C3%A3o%20de%20fotos%3A%20edi%C3%A7%C3%A3o%20b%C3%A1sica%20(R%24%2014%2C89%20por%20foto)." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento de edição básica de fotos pelo WhatsApp">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Solicitar orçamento
+            </a>
+          </article>
+
+          <article class="offer offer--featured" aria-labelledby="of-foto-complexa" data-reveal>
+            <p class="offer__tag">por foto</p>
+            <h3 class="offer__name" id="of-foto-complexa">Edição complexa</h3>
+            <p class="offer__desc">Para imagens que exigem retoques detalhados, recortes ou montagens. O valor varia conforme a complexidade.</p>
+            <dl class="offer__price">
+              <dt>Valor</dt>
+              <dd class="offer__value">R$&nbsp;29,90 <span>a</span> R$&nbsp;69,99<span>/foto</span></dd>
+            </dl>
+            <ul class="offer__list">
+              <li>Retoques detalhados</li>
+              <li>Recortes e montagens</li>
+            </ul>
+            <p class="bonus"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg><span><strong class="bonus__tag">Bônus</strong> Na edição de <strong>R$&nbsp;69,99</strong>, você recebe uma foto adicional editada.</span></p>
+            <a class="btn btn--primary btn--block" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20edi%C3%A7%C3%A3o%20de%20fotos%3A%20edi%C3%A7%C3%A3o%20complexa%20(R%24%2029%2C90%20a%20R%24%2069%2C99%20por%20foto)." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento de edição complexa de fotos pelo WhatsApp">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Solicitar orçamento
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDIÇÃO DE VÍDEOS ============ -->
+    <section class="section svc" id="videos" aria-labelledby="videos-title">
+      <div class="container">
+        <header class="svc__head svc__head--row" data-reveal>
+          <span class="svc__icon"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></span>
+          <div>
+            <p class="eyebrow">Edição de vídeos</p>
+            <h2 class="section__title" id="videos-title">Vídeos curtos, editados no ritmo certo</h2>
+            <p class="section__lead">Vídeos para redes sociais, divulgação e apresentações, editados conforme o objetivo de cada conteúdo.</p>
+          </div>
+        </header>
+
+        <div class="offers offers--3">
+          <article class="offer" aria-labelledby="of-video-basico" data-reveal>
+            <p class="offer__tag">até 30 s</p>
+            <h3 class="offer__name" id="of-video-basico">Vídeo básico</h3>
+            <p class="offer__desc">Para vídeos curtos que precisam de uma edição simples e limpa.</p>
+            <dl class="offer__price">
+              <dt>Valor</dt>
+              <dd class="offer__value">R$&nbsp;60 <span>a</span> R$&nbsp;90</dd>
+            </dl>
+            <ul class="offer__list">
+              <li>Até 30 segundos</li>
+              <li>Cortes e ajustes simples</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeo%3A%20v%C3%ADdeo%20b%C3%A1sico%2C%20at%C3%A9%2030%20segundos%20(R%24%2060%20a%20R%24%2090)." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento de vídeo básico pelo WhatsApp">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Solicitar orçamento
+            </a>
+          </article>
+
+          <article class="offer offer--featured" aria-labelledby="of-video-dinamico" data-reveal>
+            <p class="offer__tag">até 60 s</p>
+            <h3 class="offer__name" id="of-video-dinamico">Vídeo dinâmico</h3>
+            <p class="offer__desc">Para conteúdos com mais ritmo, que prendem a atenção do início ao fim.</p>
+            <dl class="offer__price">
+              <dt>Valor</dt>
+              <dd class="offer__value">R$&nbsp;90 <span>a</span> R$&nbsp;160</dd>
+            </dl>
+            <ul class="offer__list">
+              <li>Até 60 segundos</li>
+              <li>Legendas e música</li>
+              <li>Cortes e transições</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeo%3A%20v%C3%ADdeo%20din%C3%A2mico%2C%20at%C3%A9%2060%20segundos%20(R%24%2090%20a%20R%24%20160)." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento de vídeo dinâmico pelo WhatsApp">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Solicitar orçamento
+            </a>
+          </article>
+
+          <article class="offer" aria-labelledby="of-video-avancado" data-reveal>
+            <p class="offer__tag">sob análise</p>
+            <h3 class="offer__name" id="of-video-avancado">Vídeo avançado</h3>
+            <p class="offer__desc">Para efeitos ou edições mais complexas, avaliadas a partir do material enviado.</p>
+            <dl class="offer__price">
+              <dt>Valor</dt>
+              <dd class="offer__value"><span>a partir de</span> R$&nbsp;160</dd>
+            </dl>
+            <ul class="offer__list">
+              <li>Efeitos ou edições mais complexas</li>
+              <li>Valor definido após análise do material</li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20edi%C3%A7%C3%A3o%20de%20v%C3%ADdeo%3A%20v%C3%ADdeo%20avan%C3%A7ado%20(a%20partir%20de%20R%24%20160)." target="_blank" rel="noopener noreferrer" aria-label="Solicitar orçamento de vídeo avançado pelo WhatsApp">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Solicitar orçamento
+            </a>
+          </article>
+        </div>
+
+        <p class="svc__note svc__note--center" data-reveal><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg><span>O valor dentro de cada faixa depende do material enviado e do resultado esperado.</span></p>
+      </div>
+    </section>
+
+    <!-- ============ PROJETOS PERSONALIZADOS ============ -->
+    <section class="section section--alt svc" id="personalizados" aria-labelledby="personalizados-title">
+      <div class="container">
+        <div class="custom" data-reveal>
+          <div class="custom__copy">
+            <span class="svc__icon"><svg class="icon" aria-hidden="true"><use href="#i-idea"/></svg></span>
+            <p class="eyebrow">Projetos personalizados</p>
+            <h2 class="section__title" id="personalizados-title">Tem uma ideia diferente?</h2>
+            <p class="section__lead">Conte o que você precisa. Vou avaliar a possibilidade de desenvolver sua solução e apresentar um orçamento personalizado.</p>
+
+            <ol class="steps">
+              <li><span class="steps__n">1</span><div><strong>Você descreve a ideia</strong><p>Pode ser simples: o problema que quer resolver já ajuda.</p></div></li>
+              <li><span class="steps__n">2</span><div><strong>Eu avalio a viabilidade</strong><p>Cada pedido é analisado individualmente.</p></div></li>
+              <li><span class="steps__n">3</span><div><strong>Você recebe um orçamento individual</strong><p>Com escopo e valor definidos antes de qualquer início.</p></div></li>
+            </ol>
+          </div>
+
+          <form class="custom__form" id="idea-form" novalidate>
+            <div class="field">
+              <label class="field__label" for="f-ideia">Descreva sua ideia ou necessidade <span class="req" aria-hidden="true">*</span></label>
+              <textarea class="field__input field__textarea" id="f-ideia" name="ideia" rows="6" required minlength="10" maxlength="1000" placeholder="Ex.: preciso de uma página simples para meus clientes agendarem horários." aria-describedby="e-ideia c-ideia"></textarea>
+              <div class="field__meta">
+                <p class="field__error" id="e-ideia" aria-live="polite"></p>
+                <p class="field__count" id="c-ideia"><span data-idea-count>0</span>/1000</p>
+              </div>
+            </div>
+            <button class="btn btn--primary btn--lg btn--block" type="submit" disabled>
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+              Solicitar orçamento
+            </button>
+            <p class="custom__hint">O WhatsApp abre com sua ideia já escrita para você revisar e enviar. Nada fica salvo neste site.</p>
+            <a class="custom__alt" href="#orcamento" data-service="personalizado">Prefiro preencher o formulário completo <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <div class="form__status" role="status" aria-live="polite" hidden></div>
+            <noscript>
+              <p class="form__noscript">Para enviar sua ideia, <a href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20um%20projeto%20personalizado.">fale comigo pelo WhatsApp</a>.</p>
+            </noscript>
+          </form>
+        </div>
+      </div>
+    </section>
+    </div>
 
     <!-- ============ ORÇAMENTO ============ -->
     <section class="section" id="orcamento" aria-labelledby="orcamento-title">
@@ -629,8 +691,11 @@
         <p class="footer__text">Sites, anúncios e edição de fotos e vídeos para negócios que querem ser bem apresentados.</p>
       </div>
       <nav class="footer__nav" aria-label="Links do rodapé">
-        <a href="#servicos">Serviços</a>
-        <a href="#planos">Planos</a>
+        <a href="#planos">Sites</a>
+        <a href="#anuncios">Anúncios</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#videos">Vídeos</a>
+        <a href="#personalizados">Personalizados</a>
         <a href="#orcamento">Orçamento</a>
         <a href="#duvidas">Observações</a>
         <a href="#contato">Contato</a>
