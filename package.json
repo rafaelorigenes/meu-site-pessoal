@@ -1,0 +1,9 @@
+{
+  "name": "rafael-servicos-digitais",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site pessoal de apresentação de serviços digitais (HTML, CSS e JavaScript puros).",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

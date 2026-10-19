@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Rafael · Sites, anúncios e edição de fotos e vídeos</title>
+  <meta name="description" content="Criação de sites para pequenos negócios, artes para anúncios e edição de fotos e vídeos. Planos a partir de R$ 350, preços claros e orçamento direto pelo WhatsApp.">
+  <meta name="author" content="Rafael">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#FAF7F1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Rafael · Serviços digitais">
+  <meta property="og:description" content="Sites, artes para anúncios e edição de fotos e vídeos com preços claros e atendimento direto.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/boot.js"></script>
+  <script src="assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Rafael · Serviços digitais",
+    "description": "Criação de sites, artes para anúncios e edição de fotos e vídeos.",
+    "email": "rafael.origenes10@gmail.com",
+    "telephone": "+55 64 99293-8611",
+    "areaServed": "BR",
+    "priceRange": "R$ 14,89 – R$ 1.800+",
+    "knowsLanguage": "pt-BR"
+  }
+  </script>
+</head>
+<body>
+  <!-- Ícones (sprite SVG) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-site" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/><path d="M6.5 6.5h.01M9 6.5h.01"/><path d="M7 13h6M7 16h4"/></symbol>
+    <symbol id="i-ad" viewBox="0 0 24 24"><path d="M4 10.2v3.6c0 .6.4 1 1 1h2.2L13 19V5L7.2 9.2H5c-.6 0-1 .4-1 1z"/><path d="M16.5 9.5a3.5 3.5 0 0 1 0 5"/><path d="M19 7a7 7 0 0 1 0 10"/></symbol>
+    <symbol id="i-photo" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M21 15.5 16 11l-8.5 8"/></symbol>
+    <symbol id="i-video" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2.5"/><path d="m16 10.5 5-3v9l-5-3z"/></symbol>
+    <symbol id="i-idea" viewBox="0 0 24 24"><path d="M9.5 18h5M10.5 21h3"/><path d="M12 3a6 6 0 0 0-3.9 10.6c.7.6.9 1.4.9 2.4h6c0-1 .2-1.8.9-2.4A6 6 0 0 0 12 3z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20.5l1.2-3.9A8.5 8.5 0 1 1 8.3 19.6z"/><path d="M9.3 8.4c.3-.4.8-.4 1 .1l.6 1.4c.1.3 0 .6-.2.8l-.5.5a6 6 0 0 0 2.7 2.7l.5-.5c.2-.2.5-.3.8-.2l1.4.6c.5.2.5.7.1 1-.7.6-1.6.8-2.5.5a8 8 0 0 1-4.4-4.4c-.3-.9-.1-1.8.5-2.5z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.5 8 6 8-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6c0-.6.4-1 1-1h9"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19 6v5c0 4.4-3 8-7 10-4-2-7-5.6-7-10V6z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="4" y="9" width="16" height="11" rx="1.5"/><path d="M3 9h18v-.5M12 9v11"/><path d="M12 9S10.5 4.5 8 5s-1 4 4 4zm0 0s1.5-4.5 4-4 1 4-4 4z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Rafael, serviços digitais — voltar ao início">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9"/><path d="M11 23.5V8.5h6a4.5 4.5 0 0 1 0 9h-6m5 0 5.5 6"/><circle cx="24" cy="9" r="1.9"/></svg>
+        <span class="brand__text">Rafael<span class="brand__sub">serviços digitais</span></span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+      </button>
+
+      <nav class="nav" id="menu" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Início</a></li>
+          <li><a class="nav__link" href="#servicos">Serviços</a></li>
+          <li><a class="nav__link" href="#planos">Planos</a></li>
+          <li><a class="nav__link" href="#orcamento">Orçamento</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="#orcamento" data-service="">Solicitar orçamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ============ INÍCIO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow hero__eyebrow"><span class="dot" aria-hidden="true"></span>Serviços digitais para pequenos negócios e profissionais</p>
+          <h1 class="hero__title" id="hero-title">Presença digital que faz seu negócio <em>parecer tão bom quanto ele é.</em></h1>
+          <p class="hero__lead">Crio sites, artes para anúncios e edições de fotos e vídeos com preços claros, conversa direta e atenção a cada detalhe — do primeiro contato à entrega.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#orcamento" data-service="">
+              Solicitar orçamento
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn btn--ghost btn--lg" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20servi%C3%A7o." target="_blank" rel="noopener noreferrer">
+              <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+              Conversar no WhatsApp
+            </a>
+          </div>
+          <ul class="hero__points">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Preços apresentados antes de começar</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Atendimento direto comigo</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Layout pensado para o celular</li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="mock">
+            <div class="mock__bar"><i></i><i></i><i></i><span class="mock__url">seunegocio.com.br</span></div>
+            <div class="mock__body">
+              <div class="mock__nav"><b></b><span></span><span></span><span></span></div>
+              <div class="mock__hero">
+                <div class="mock__lines"><span class="w90"></span><span class="w70"></span><span class="w50 thin"></span><span class="mock__btn"></span></div>
+                <div class="mock__img"></div>
+              </div>
+              <div class="mock__grid"><div></div><div></div><div></div></div>
+            </div>
+          </div>
+          <div class="mock-phone">
+            <div class="mock-phone__notch"></div>
+            <span class="w80"></span><span class="w60 thin"></span>
+            <div class="mock-phone__img"></div>
+            <span class="mock-phone__cta"></span>
+          </div>
+          <span class="float-tag float-tag--1"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Layout responsivo</span>
+          <span class="float-tag float-tag--2"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>Botão de WhatsApp</span>
+          <span class="float-tag float-tag--3"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>SEO básico</span>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="hero__services" aria-label="Atalhos para os serviços">
+          <li><a href="#planos"><svg class="icon" aria-hidden="true"><use href="#i-site"/></svg><span>Criação de sites</span><small>a partir de R$&nbsp;350</small></a></li>
+          <li><a href="#svc-anuncios" data-tab-link="svc-anuncios"><svg class="icon" aria-hidden="true"><use href="#i-ad"/></svg><span>Anúncios</span><small>a partir de R$&nbsp;35</small></a></li>
+          <li><a href="#svc-fotos" data-tab-link="svc-fotos"><svg class="icon" aria-hidden="true"><use href="#i-photo"/></svg><span>Edição de fotos</span><small>a partir de R$&nbsp;14,89</small></a></li>
+          <li><a href="#svc-videos" data-tab-link="svc-videos"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg><span>Edição de vídeos</span><small>a partir de R$&nbsp;60</small></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ SERVIÇOS ============ -->
+    <section class="section" id="servicos" aria-labelledby="servicos-title">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <p class="eyebrow">Serviços</p>
+          <h2 class="section__title" id="servicos-title">O que eu posso fazer pelo seu negócio</h2>
+          <p class="section__lead">Escolha uma categoria para ver o que está incluído e os valores. Se não encontrar exatamente o que procura, conte sua ideia.</p>
+        </header>
+
+        <div class="services" data-tabs data-reveal>
+          <div class="services__nav" data-tablist aria-label="Categorias de serviços">
+            <a class="services__tab" href="#svc-sites" data-tab="svc-sites">
+              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-site"/></svg></span>
+              <span class="services__tab-text"><strong>Criação de sites</strong><small>a partir de R$&nbsp;350</small></span>
+            </a>
+            <a class="services__tab" href="#svc-anuncios" data-tab="svc-anuncios">
+              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-ad"/></svg></span>
+              <span class="services__tab-text"><strong>Criação de anúncios</strong><small>a partir de R$&nbsp;35</small></span>
+            </a>
+            <a class="services__tab" href="#svc-fotos" data-tab="svc-fotos">
+              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-photo"/></svg></span>
+              <span class="services__tab-text"><strong>Edição de fotos</strong><small>a partir de R$&nbsp;14,89</small></span>
+            </a>
+            <a class="services__tab" href="#svc-videos" data-tab="svc-videos">
+              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-video"/></svg></span>
+              <span class="services__tab-text"><strong>Edição de vídeos</strong><small>a partir de R$&nbsp;60</small></span>
+            </a>
+            <a class="services__tab" href="#svc-personalizados" data-tab="svc-personalizados">
+              <span class="services__tab-icon"><svg class="icon" aria-hidden="true"><use href="#i-idea"/></svg></span>
+              <span class="services__tab-text"><strong>Projetos personalizados</strong><small>orçamento sob medida</small></span>
+            </a>
+          </div>
+
+          <div class="services__panels">
+            <!-- Sites -->
+            <article class="panel" id="svc-sites" aria-labelledby="svc-sites-title">
+              <div class="panel__head">
+                <h3 class="panel__title" id="svc-sites-title">Criação de sites</h3>
+                <p class="panel__desc">Sites institucionais, catálogos de produtos e sistemas sob medida, sempre adaptados para celular e computador. São três planos, do essencial ao personalizado.</p>
+              </div>
+              <ul class="price-list">
+                <li class="price-row">
+                  <div class="price-row__info"><strong>Plano Básico</strong><span>Presença digital com até 8 páginas ou seções</span></div>
+                  <p class="price-row__value">R$&nbsp;350 <span>a</span> R$&nbsp;500</p>
+                </li>
+                <li class="price-row">
+                  <div class="price-row__info"><strong>Plano Profissional</strong><span>Catálogo, galeria, formulário e mapa</span></div>
+                  <p class="price-row__value">R$&nbsp;600 <span>a</span> R$&nbsp;850</p>
+                </li>
+                <li class="price-row">
+                  <div class="price-row__info"><strong>Plano Premium</strong><span>Funcionalidades personalizadas, login e painel</span></div>
+                  <p class="price-row__value">R$&nbsp;1.200 <span>a</span> R$&nbsp;1.800<span> ou mais</span></p>
+                </li>
+              </ul>
+              <p class="panel__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>Valores de criação. A manutenção mensal é cobrada à parte e aparece em cada plano.</p>
+              <div class="panel__actions">
+                <a class="btn btn--primary" href="#planos">Ver e comparar os planos <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </article>
+
+            <!-- Anúncios -->
+            <article class="panel" id="svc-anuncios" aria-labelledby="svc-anuncios-title">
+              <div class="panel__head">
+                <h3 class="panel__title" id="svc-anuncios-title">Criação de anúncios</h3>
+                <p class="panel__desc">Criação de artes publicitárias para divulgar seus produtos e serviços nas redes sociais, com visual alinhado à sua marca e mensagem clara.</p>
+              </div>
+              <ul class="price-list">
+                <li class="price-row">
+                  <div class="price-row__info"><strong>Anúncio individual</strong><span>Uma arte publicitária</span></div>
+                  <p class="price-row__value">R$&nbsp;35 <span>a</span> R$&nbsp;60</p>
+                </li>
+                <li class="price-row price-row--accent">
+                  <div class="price-row__info"><strong>Pacote com 5 anúncios</strong><span>Cinco artes — equivale a R$&nbsp;20 por arte</span></div>
+                  <p class="price-row__value">R$&nbsp;100,00</p>
+                </li>
+              </ul>
+              <p class="panel__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O serviço é a criação das artes. A verba dos anúncios e o gerenciamento de campanhas não estão incluídos.</p>
+              <div class="panel__actions">
+                <a class="btn btn--primary" href="#orcamento" data-service="anuncio-individual">Solicitar orçamento</a>
+                <a class="btn btn--ghost" href="#orcamento" data-service="anuncio-pacote">Quero o pacote</a>
+              </div>
+            </article>
+
+            <!-- Fotos -->
+            <article class="panel" id="svc-fotos" aria-labelledby="svc-fotos-title">
+              <div class="panel__head">
+                <h3 class="panel__title" id="svc-fotos-title">Edição de fotos</h3>
+                <p class="panel__desc">Tratamento de imagens para produtos, redes sociais e materiais de divulgação. O valor acompanha o nível de trabalho que cada foto exige.</p>
+              </div>
+
+              <div class="scale" role="img" aria-label="Escala de preço por complexidade: edição básica R$&nbsp;14,89; edição complexa de R$&nbsp;29,90 a R$&nbsp;69,99, com uma foto bônus na edição de R$&nbsp;69,99.">
+                <div class="scale__track"><span class="scale__fill"></span></div>
+                <div class="scale__marks">
+                  <span class="scale__mark"><b>R$&nbsp;14,89</b>básica</span>
+                  <span class="scale__mark"><b>R$&nbsp;29,90</b>complexa</span>
+                  <span class="scale__mark scale__mark--end"><b>R$&nbsp;69,99</b>+1 foto bônus</span>
+                </div>
+              </div>
+
+              <ul class="price-list">
+                <li class="price-row">
+                  <div class="price-row__info"><strong>Edição básica</strong><span>Ajustes de luz, cor e enquadramento</span></div>
+                  <p class="price-row__value">R$&nbsp;14,89<span>/foto</span></p>
+                </li>
+                <li class="price-row">
+                  <div class="price-row__info"><strong>Edição complexa</strong><span>Retoques detalhados, recortes e montagens</span></div>
+                  <p class="price-row__value">R$&nbsp;29,90 <span>a</span> R$&nbsp;69,99<span>/foto</span></p>
+                </li>
+              </ul>
+              <p class="bonus"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg><span>Na edição de <strong>R$&nbsp;69,99</strong>, você recebe uma foto adicional editada como bônus.</span></p>
+              <p class="panel__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O orçamento final depende do trabalho solicitado. Envie as fotos e o que deseja para receber o valor exato.</p>
+              <div class="panel__actions">
+                <a class="btn btn--primary" href="#orcamento" data-service="foto-basica">Solicitar orçamento</a>
+              </div>
+            </article>
+
+            <!-- Vídeos -->
+            <article class="panel" id="svc-videos" aria-labelledby="svc-videos-title">
+              <div class="panel__head">
+                <h3 class="panel__title" id="svc-videos-title">Edição de vídeos</h3>
+                <p class="panel__desc">Vídeos curtos para redes sociais, divulgação e apresentações, editados conforme o ritmo e o objetivo de cada conteúdo.</p>
+              </div>
+              <ul class="tiers">
+                <li class="tier">
+                  <p class="tier__tag">até 30 s</p>
+                  <h4 class="tier__name">Vídeo básico</h4>
+                  <p class="tier__price">R$&nbsp;60 <span>a</span> R$&nbsp;90</p>
+                  <p class="tier__desc">Cortes e ajustes simples.</p>
+                  <a class="tier__link" href="#orcamento" data-service="video-basico">Solicitar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </li>
+                <li class="tier">
+                  <p class="tier__tag">até 60 s</p>
+                  <h4 class="tier__name">Vídeo dinâmico</h4>
+                  <p class="tier__price">R$&nbsp;90 <span>a</span> R$&nbsp;160</p>
+                  <p class="tier__desc">Legendas, música, cortes e transições.</p>
+                  <a class="tier__link" href="#orcamento" data-service="video-dinamico">Solicitar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </li>
+                <li class="tier">
+                  <p class="tier__tag">sob análise</p>
+                  <h4 class="tier__name">Vídeo avançado</h4>
+                  <p class="tier__price"><span>a partir de</span> R$&nbsp;160</p>
+                  <p class="tier__desc">Para efeitos ou edições mais complexas.</p>
+                  <a class="tier__link" href="#orcamento" data-service="video-avancado">Solicitar <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                </li>
+              </ul>
+              <p class="panel__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>O valor dentro de cada faixa depende do material enviado e do resultado esperado.</p>
+            </article>
+
+            <!-- Personalizados -->
+            <article class="panel panel--custom" id="svc-personalizados" aria-labelledby="svc-personalizados-title">
+              <div class="panel__head">
+                <span class="panel__badge"><svg class="icon" aria-hidden="true"><use href="#i-idea"/></svg></span>
+                <h3 class="panel__title" id="svc-personalizados-title">Projetos personalizados</h3>
+                <p class="panel__desc panel__desc--lg">Tem uma ideia diferente? Conte o que você precisa. Vou avaliar a possibilidade de desenvolver sua solução e apresentar um orçamento personalizado.</p>
+              </div>
+              <div class="panel__actions">
+                <a class="btn btn--primary" href="#orcamento" data-service="personalizado">Solicitar orçamento <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLANOS ============ -->
+    <section class="section section--alt" id="planos" aria-labelledby="planos-title">
+      <div class="container">
+        <header class="section__head section__head--center" data-reveal>
+          <p class="eyebrow">Planos de sites</p>
+          <h2 class="section__title" id="planos-title">Um plano para cada momento do seu negócio</h2>
+          <p class="section__lead">O valor de criação é cobrado uma vez para desenvolver o site. A manutenção mensal mantém tudo funcionando e atualizado conforme o escopo combinado.</p>
+        </header>
+
+        <div class="plans">
+          <!-- Básico -->
+          <article class="plan plan--basic" aria-labelledby="plan-basico" data-reveal>
+            <header class="plan__head">
+              <h3 class="plan__name" id="plan-basico">Básico</h3>
+              <p class="plan__fit">Ideal para pequenos negócios que precisam de presença digital.</p>
+            </header>
+            <dl class="plan__prices">
+              <div class="plan__price">
+                <dt>Criação</dt>
+                <dd class="plan__value">R$&nbsp;350 <span>a</span> R$&nbsp;500</dd>
+              </div>
+              <div class="plan__monthly">
+                <dt>Manutenção mensal</dt>
+                <dd>R$&nbsp;54,90<span>/mês</span></dd>
+              </div>
+            </dl>
+            <p class="plan__highlight"><strong>até 20</strong> produtos no catálogo</p>
+            <ul class="plan__features">
+              <li>Site com até 8 páginas ou seções</li>
+              <li>Informações da empresa, serviços e contatos</li>
+              <li>Botão de contato pelo WhatsApp</li>
+              <li>Layout adaptado para celular e computador</li>
+              <li>Catálogo com até 20 produtos</li>
+              <li>Configuração básica de SEO</li>
+            </ul>
+            <p class="plan__extra">Produto adicional: <strong>R$&nbsp;2,79</strong> por produto cadastrado além dos 20 incluídos.</p>
+            <a class="btn btn--ghost btn--block" href="#orcamento" data-service="site-basico">Quero o plano Básico</a>
+          </article>
+
+          <!-- Profissional -->
+          <article class="plan plan--pro" aria-labelledby="plan-profissional" data-reveal>
+            <header class="plan__head">
+              <h3 class="plan__name" id="plan-profissional">Profissional</h3>
+              <p class="plan__fit">Ideal para empresas que desejam apresentar melhor seus produtos e captar clientes.</p>
+            </header>
+            <dl class="plan__prices">
+              <div class="plan__price">
+                <dt>Criação</dt>
+                <dd class="plan__value">R$&nbsp;600 <span>a</span> R$&nbsp;850</dd>
+              </div>
+              <div class="plan__monthly">
+                <dt>Manutenção mensal</dt>
+                <dd>R$&nbsp;99,90<span>/mês</span></dd>
+              </div>
+            </dl>
+            <p class="plan__highlight"><strong>até 40</strong> produtos no catálogo</p>
+            <ul class="plan__features">
+              <li>Páginas organizadas conforme a necessidade do negócio</li>
+              <li>Catálogo com até 40 produtos</li>
+              <li>Galeria de fotos ou portfólio</li>
+              <li>Formulário para pedidos de orçamento</li>
+              <li>Mapa com a localização da empresa</li>
+              <li>Animações e interações simples</li>
+              <li>Configuração de SEO e otimização básica de desempenho</li>
+            </ul>
+            <a class="btn btn--primary btn--block" href="#orcamento" data-service="site-profissional">Quero o plano Profissional</a>
+          </article>
+
+          <!-- Premium -->
+          <article class="plan plan--premium" aria-labelledby="plan-premium" data-reveal>
+            <header class="plan__head">
+              <h3 class="plan__name" id="plan-premium">Premium</h3>
+              <p class="plan__fit">Ideal para empresas que precisam de funcionalidades personalizadas.</p>
+            </header>
+            <dl class="plan__prices">
+              <div class="plan__price">
+                <dt>Criação</dt>
+                <dd class="plan__value">R$&nbsp;1.200 <span>a</span> R$&nbsp;1.800 <span>ou mais</span></dd>
+              </div>
+              <div class="plan__monthly">
+                <dt>Manutenção mensal</dt>
+                <dd>R$&nbsp;150 <span>a</span> R$&nbsp;300<span>/mês</span></dd>
+                <dd class="plan__monthly-note">conforme a complexidade do sistema</dd>
+              </div>
+            </dl>
+            <p class="plan__highlight"><strong>até 80</strong> produtos no catálogo</p>
+            <ul class="plan__features">
+              <li>Site personalizado conforme o projeto</li>
+              <li>Catálogo com até 80 produtos</li>
+              <li>Banco de dados para armazenar informações</li>
+              <li>Sistema de cadastro e login de usuários</li>
+              <li>Área exclusiva para clientes</li>
+              <li>Painel administrativo para gerenciar informações</li>
+              <li>Controle de acesso para administradores e clientes</li>
+              <li>Medidas básicas de segurança e validação de dados</li>
+            </ul>
+            <p class="plan__extra">O escopo e as funcionalidades são definidos juntos, após a análise técnica do projeto e antes do início do desenvolvimento.</p>
+            <a class="btn btn--light btn--block" href="#orcamento" data-service="site-premium">Quero o plano Premium</a>
+          </article>
+        </div>
+
+        <p class="plans__help" data-reveal>Não sabe qual plano escolher? <a href="#orcamento" data-service="site-indefinido">Descreva seu negócio e eu indico o mais adequado</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ ORÇAMENTO ============ -->
+    <section class="section" id="orcamento" aria-labelledby="orcamento-title">
+      <div class="container quote">
+        <div class="quote__intro" data-reveal>
+          <p class="eyebrow">Orçamento personalizado</p>
+          <h2 class="section__title" id="orcamento-title">Conte o que você precisa</h2>
+          <p class="section__lead">Quanto mais detalhes, mais preciso fica o orçamento. Não precisa ter tudo definido — eu ajudo a organizar a ideia.</p>
+
+          <ol class="steps">
+            <li><span class="steps__n">1</span><div><strong>Você descreve o projeto</strong><p>Preencha o formulário ou chame direto no WhatsApp.</p></div></li>
+            <li><span class="steps__n">2</span><div><strong>Eu analiso e respondo</strong><p>Você recebe um orçamento com escopo, valor e prazo.</p></div></li>
+            <li><span class="steps__n">3</span><div><strong>Com tudo aprovado, começamos</strong><p>O trabalho só começa depois que o escopo estiver combinado.</p></div></li>
+          </ol>
+
+          <div class="privacy">
+            <svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>
+            <p><strong>Como o envio funciona:</strong> este site não tem um servidor de envio de formulários. Ao enviar, o WhatsApp (ou seu aplicativo de e-mail) abre com a mensagem já preenchida para você revisar e enviar. Seus dados não ficam salvos neste site.</p>
+          </div>
+        </div>
+
+        <div class="quote__card" data-reveal>
+          <form class="form" id="quote-form" novalidate aria-describedby="form-required-hint">
+            <p class="form__hint" id="form-required-hint">Campos marcados com <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> são obrigatórios.</p>
+
+            <div class="form__grid">
+              <div class="field">
+                <label class="field__label" for="f-nome">Nome <span class="req" aria-hidden="true">*</span></label>
+                <input class="field__input" id="f-nome" name="nome" type="text" autocomplete="name" required maxlength="80" aria-describedby="e-nome">
+                <p class="field__error" id="e-nome" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-empresa">Empresa <span class="opt">(opcional)</span></label>
+                <input class="field__input" id="f-empresa" name="empresa" type="text" autocomplete="organization" maxlength="80">
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-whatsapp">WhatsApp <span class="req" aria-hidden="true">*</span></label>
+                <input class="field__input" id="f-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(00) 00000-0000" required maxlength="20" aria-describedby="e-whatsapp">
+                <p class="field__error" id="e-whatsapp" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label class="field__label" for="f-email">E-mail <span class="opt">(opcional)</span></label>
+                <input class="field__input" id="f-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="120" aria-describedby="e-email">
+                <p class="field__error" id="e-email" aria-live="polite"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="f-servico">Serviço desejado <span class="req" aria-hidden="true">*</span></label>
+                <select class="field__input field__select" id="f-servico" name="servico" required aria-describedby="e-servico">
+                  <option value="">Selecione um serviço</option>
+                  <optgroup label="Criação de sites">
+                    <option value="site-basico">Site — Plano Básico</option>
+                    <option value="site-profissional">Site — Plano Profissional</option>
+                    <option value="site-premium">Site — Plano Premium</option>
+                    <option value="site-indefinido">Site — ainda não sei qual plano</option>
+                  </optgroup>
+                  <optgroup label="Criação de anúncios">
+                    <option value="anuncio-individual">Anúncio individual</option>
+                    <option value="anuncio-pacote">Pacote com 5 anúncios</option>
+                  </optgroup>
+                  <optgroup label="Edição de fotos">
+                    <option value="foto-basica">Edição de fotos — básica</option>
+                    <option value="foto-complexa">Edição de fotos — complexa</option>
+                  </optgroup>
+                  <optgroup label="Edição de vídeos">
+                    <option value="video-basico">Vídeo básico (até 30 s)</option>
+                    <option value="video-dinamico">Vídeo dinâmico (até 60 s)</option>
+                    <option value="video-avancado">Vídeo avançado</option>
+                  </optgroup>
+                  <optgroup label="Outros">
+                    <option value="personalizado">Projeto personalizado</option>
+                    <option value="outro">Outro / ainda não sei</option>
+                  </optgroup>
+                </select>
+                <p class="field__error" id="e-servico" aria-live="polite"></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="f-descricao">Descrição do projeto <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="field__input field__textarea" id="f-descricao" name="descricao" rows="5" required minlength="10" maxlength="1200" placeholder="Ex.: tenho uma loja de roupas e quero um site com catálogo de 30 produtos e botão para pedidos no WhatsApp." aria-describedby="e-descricao c-descricao"></textarea>
+                <div class="field__meta">
+                  <p class="field__error" id="e-descricao" aria-live="polite"></p>
+                  <p class="field__count" id="c-descricao"><span data-count>0</span>/1200</p>
+                </div>
+              </div>
+
+              <div class="field field--full">
+                <label class="field__label" for="f-prazo">Prazo desejado <span class="req" aria-hidden="true">*</span></label>
+                <select class="field__input field__select" id="f-prazo" name="prazo" required aria-describedby="e-prazo h-prazo">
+                  <option value="">Selecione um prazo</option>
+                  <option>O quanto antes (até 7 dias)</option>
+                  <option>Até 15 dias</option>
+                  <option>Até 30 dias</option>
+                  <option>Mais de 30 dias</option>
+                  <option>Sem prazo definido</option>
+                </select>
+                <p class="field__help" id="h-prazo">O prazo final de entrega é combinado no orçamento.</p>
+                <p class="field__error" id="e-prazo" aria-live="polite"></p>
+              </div>
+            </div>
+
+            <div class="form__actions">
+              <button class="btn btn--primary btn--lg btn--block" type="submit" data-action="whatsapp" disabled>
+                <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+                <span data-submit-label>Enviar pelo WhatsApp</span>
+              </button>
+              <button class="btn btn--ghost btn--block" type="button" data-action="email" disabled>
+                <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
+                Prefiro enviar por e-mail
+              </button>
+            </div>
+
+            <div class="form__status" role="status" aria-live="polite" hidden></div>
+
+            <noscript>
+              <p class="form__noscript">O formulário precisa de JavaScript ativado. Você pode pedir seu orçamento diretamente pelo <a href="https://wa.me/5564992938611">WhatsApp</a> ou pelo e-mail <a href="mailto:rafael.origenes10@gmail.com">rafael.origenes10@gmail.com</a>.</p>
+            </noscript>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DÚVIDAS / OBSERVAÇÕES ============ -->
+    <section class="section section--alt" id="duvidas" aria-labelledby="duvidas-title">
+      <div class="container faq">
+        <header class="faq__head" data-reveal>
+          <p class="eyebrow">Observações</p>
+          <h2 class="section__title" id="duvidas-title">Bom saber antes de contratar</h2>
+          <p class="section__lead">Transparência desde o primeiro contato. Se ficar qualquer dúvida, é só perguntar.</p>
+        </header>
+
+        <div class="faq__list" data-reveal>
+          <details class="faq__item">
+            <summary>Os preços apresentados são definitivos?</summary>
+            <div class="faq__body"><p>Os valores mostrados são preços iniciais ou faixas estimadas. O valor final é definido no orçamento, de acordo com o escopo e a complexidade de cada projeto.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Hospedagem e domínio estão incluídos?</summary>
+            <div class="faq__body"><p>Não automaticamente. Hospedagem e domínio (como “seunegocio.com.br”) são contratados à parte e podem ter custos próprios, informados antes no orçamento.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Existem outros custos além do serviço?</summary>
+            <div class="faq__body"><p>Serviços externos — como ferramentas, plataformas ou integrações de terceiros — podem ter custos adicionais. Tudo isso é informado antes, no orçamento.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>O catálogo de produtos é uma loja virtual?</summary>
+            <div class="faq__body"><p>Não. O catálogo apresenta seus produtos, mas não inclui carrinho de compras nem pagamento online. Pagamentos online, gestão de pedidos e controle de estoque precisam de um orçamento específico.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>O que a manutenção mensal cobre?</summary>
+            <div class="faq__body"><p>As alterações e o suporte incluídos na manutenção seguem o escopo acordado com cada cliente, definido antes do início do contrato.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Você desenvolve funcionalidades sob medida?</summary>
+            <div class="faq__body"><p>Funcionalidades personalizadas dependem de uma análise técnica. Primeiro entendo a necessidade, depois confirmo se é viável e apresento escopo e valor.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>A criação de anúncios inclui o impulsionamento?</summary>
+            <div class="faq__body"><p>Não. O serviço é a criação das artes publicitárias. A verba dos anúncios e o gerenciamento das campanhas não estão incluídos.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato" aria-labelledby="contato-title">
+      <div class="container">
+        <div class="contact" data-reveal>
+          <div class="contact__copy">
+            <p class="eyebrow">Contato</p>
+            <h2 class="section__title" id="contato-title">Vamos conversar sobre o seu projeto?</h2>
+            <p class="section__lead">Escolha o canal mais prático para você. Respondo pessoalmente cada mensagem.</p>
+          </div>
+
+          <div class="contact__cards">
+            <a class="contact-card contact-card--wa" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20servi%C3%A7o." target="_blank" rel="noopener noreferrer">
+              <span class="contact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+              <span class="contact-card__body">
+                <span class="contact-card__label">WhatsApp</span>
+                <span class="contact-card__value">+55 64 99293-8611</span>
+              </span>
+              <span class="contact-card__cta">Iniciar conversa <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            </a>
+
+            <div class="contact-card contact-card--mail">
+              <span class="contact-card__icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+              <span class="contact-card__body">
+                <span class="contact-card__label">E-mail</span>
+                <a class="contact-card__value" href="mailto:rafael.origenes10@gmail.com?subject=Contato%20pelo%20site">rafael.origenes10@gmail.com</a>
+              </span>
+              <span class="contact-card__actions">
+                <a class="contact-card__cta" href="mailto:rafael.origenes10@gmail.com?subject=Contato%20pelo%20site">Enviar e-mail <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                <button class="copy-btn" type="button" data-copy="rafael.origenes10@gmail.com" hidden>
+                  <svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-copy-label>Copiar</span>
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand brand--footer" href="#inicio" aria-label="Voltar ao início">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9"/><path d="M11 23.5V8.5h6a4.5 4.5 0 0 1 0 9h-6m5 0 5.5 6"/><circle cx="24" cy="9" r="1.9"/></svg>
+          <span class="brand__text">Rafael<span class="brand__sub">serviços digitais</span></span>
+        </a>
+        <p class="footer__text">Sites, anúncios e edição de fotos e vídeos para negócios que querem ser bem apresentados.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Links do rodapé">
+        <a href="#servicos">Serviços</a>
+        <a href="#planos">Planos</a>
+        <a href="#orcamento">Orçamento</a>
+        <a href="#duvidas">Observações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> Rafael · Serviços digitais. Valores sujeitos ao escopo de cada projeto.</p>
+      <p class="footer__signature">Created by Rafael</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5564992938611?text=Ol%C3%A1%2C%20Rafael!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20servi%C3%A7o." target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp" tabindex="-1" data-wa-float>
+    <svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg>
+  </a>
+</body>
+</html>
