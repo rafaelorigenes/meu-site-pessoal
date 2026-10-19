@@ -3,6 +3,21 @@
 Site pessoal de apresentação de serviços (sites, anúncios, edição de fotos e vídeos).
 Feito em HTML, CSS e JavaScript puros: sem dependências e sem etapa de build.
 
+## No ar
+
+- Site: **https://martinsksv69-cpu.github.io/meu-site-pessoal/**
+- Código: https://github.com/martinsksv69-cpu/meu-site-pessoal
+
+Publicado pelo GitHub Pages a partir da branch `main`. Para atualizar o site, basta enviar as mudanças:
+
+```bash
+git add -A
+git commit -m "Descreva a mudança"
+git push
+```
+
+Em cerca de 1 minuto a nova versão aparece no endereço acima.
+
 ## Rodar localmente
 
 Requer Node.js (qualquer versão recente).
@@ -46,13 +61,6 @@ Nenhum dado é salvo no site nem colocado na URL da página.
 Assim o botão principal passa a enviar de verdade, e a confirmação só aparece se o serviço
 responder com sucesso. O WhatsApp continua como alternativa em caso de erro.
 
-## Publicar
+## Domínio próprio (opcional)
 
-Qualquer hospedagem de sites estáticos serve (Netlify, Vercel, GitHub Pages, Cloudflare Pages
-ou uma hospedagem comum): envie o conteúdo da pasta, sem precisar do `server.js` nem do `package.json`.
-Depois de ter um domínio, vale adicionar no `<head>` do `index.html`:
-
-```html
-<link rel="canonical" href="https://seudominio.com.br/">
-<meta property="og:url" content="https://seudominio.com.br/">
-```
+Para usar um domínio como `seunegocio.com.br`: no GitHub, abra **Settings → Pages → Custom domain**, informe o domínio e siga as instruções de DNS. Depois troque o endereço em `canonical` e `og:url` no `<head>` do `index.html`.
