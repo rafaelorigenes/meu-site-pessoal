@@ -5,8 +5,8 @@ Feito em HTML, CSS e JavaScript puros: sem dependências e sem etapa de build.
 
 ## No ar
 
-- Site: **https://martinsksv69-cpu.github.io/meu-site-pessoal/**
-- Código: https://github.com/martinsksv69-cpu/meu-site-pessoal
+- Site: **https://rafaelorigenes.github.io/meu-site-pessoal/**
+- Código: https://github.com/rafaelorigenes/meu-site-pessoal
 
 Publicado pelo GitHub Pages a partir da branch `main`. Para atualizar o site, basta enviar as mudanças:
 
